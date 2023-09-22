@@ -1,13 +1,8 @@
-import './App.css';
-import React from 'react';
-import PhoneFrame from './components/phoneframe';
-import Navbar from './components/navbar';
-function App() {
-  return (
-    <div>
-    </div>
-  );
-}
+import React from "react";
+
+const App = () => {
+  return <div className="bg-custom-1 h-screen w-screen ">App</div>;
+};
 
 export default App;
 
