@@ -1,9 +1,9 @@
 import React from "react";
 
-function Navbar() {
+const Navbar = ({ Contactus }) => {
   return (
     <nav className="bg-transparent p-8">
-      <div className="container mx-auto flex justify-between items-center ">
+      <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="text-2xl font-nunito font-semibold text-black">
           Dr. NatureVeda
         </a>
@@ -12,28 +12,33 @@ function Navbar() {
           <li>
             <a
               href="/"
-              className="text-white hover:text-gray-300 font-lato"
-            ></a>
-            Home
+              className="text-black hover:text-gray-300 font-lato"
+            >
+              Home
+            </a>
           </li>
           <li>
             <a
               href="/about"
-              className="text-white hover:text-gray-300 font-lato"
-            ></a>
-            About
+              className="text-black hover:text-gray-300 font-lato"
+            >
+              About
+            </a>
           </li>
           <li>
-            <a
-              href="/services"
-              className="text-white hover:text-gray-300 font-lato"
-            ></a>
-            Contact us{" "}
+            <button onClick={Contactus}>
+              <a
+                href="/services"
+                className="text-black hover:text-gray-300 font-lato"
+              >
+                Contact us
+              </a>
+            </button>
           </li>
         </ul>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
