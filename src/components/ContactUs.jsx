@@ -6,7 +6,7 @@ const ContactUs = () => {
       className="flex flex-col items-center justify-center min-h-screen bg-custom-1"
       id="contact"
     >
-      <div className="bg-white p-6 rounded-lg shadow-md w-96">
+      <div className="bg-white p-6 rounded-lg shadow-md w-96 xl:w-2/4"> {/* Adjust width here */}
         <h2 className="text-2xl font-nunito-sans mb-4">Contact Us</h2>
         <div className="mb-4">
           <label
