@@ -44,8 +44,10 @@ const Navbar = () => {
             </a>
           </li>
           {storedName ? (
-            <li className="text-black hover:text-gray-300 font-lato">
-              {storedName}
+            <li>
+              <button className="text-black hover:text-gray-300 font-lato" onClick={openPopup}>
+                {storedName}
+              </button>
             </li>
           ) : (
             <li>
