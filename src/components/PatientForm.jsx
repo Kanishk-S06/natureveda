@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {motion} from 'framer-motion';
 const PatientForm = ({ onSubmit }) => {
   const [patientData, setPatientData] = useState({
     patientName: "",
@@ -26,7 +26,10 @@ const PatientForm = ({ onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2 className="text-[25px] mt-2 font-semibold mb-2">Patient Details</h2>
+      <motion.h2 
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2 }}
+      className="text-[25px] mt-2 font-semibold mb-2">Patient Details</motion.h2>
       <div className="mb-4">
         <label htmlFor="patientName" className="block mb-2 text-lg text-indigo-600 font-semibold">
           Patient Name:

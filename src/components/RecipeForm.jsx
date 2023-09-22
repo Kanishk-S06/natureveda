@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {motion} from 'framer-motion';
 const RecipeForm = ({ onSubmit }) => {
   const [recipeData, setRecipeData] = useState({
     recipeName: "",
@@ -24,7 +24,10 @@ const RecipeForm = ({ onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2 className="text-[25px] font-semibold mb-2 ">Recipe Details</h2>
+      <motion.h2 
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2 }} className="text-[25px] font-semibold mb-2 ">Recipe Details</motion.h2>
       <div className="mb-4">
         <label htmlFor="recipeName" className="block mb-2 text-lg text-indigo-600 font-semibold">
           Recipe Name:
@@ -35,6 +38,8 @@ const RecipeForm = ({ onSubmit }) => {
           name="recipeName"
           value={recipeData.recipeName}
           onChange={handleChange}
+          initial={{ scaleX: 0 }} // Initial scale X is set to 0
+  animate={{ scaleX: 1 }} // Final scale X is set to 1
           className="border p-2 rounded w-full shadow appearance-none py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           required
         />
