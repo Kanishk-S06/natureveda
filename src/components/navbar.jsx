@@ -7,10 +7,10 @@ function Navbar() {
         <a href="/" className="text-2xl font-nunito font-semibold text-black">Dr. NatureVeda</a>
         
         <ul className="flex space-x-4">
-          <li><a href="/" className="text-white hover:text-gray-300 font-lato"></a>Home</li>
-          <li><a href="/about" className="text-white hover:text-gray-300 font-lato"></a>About</li>
-          <li><a href="/services" className="text-white hover:text-gray-300 font-lato"></a>Contact</li>
-          <li><a href="/contact" className="text-white hover:text-gray-300 font-lato"></a>Help</li>
+          <li><a href="/" className="text-white hover:text-gray-300 font-lato font-light"></a>Home</li>
+          <li><a href="/about" className="text-white hover:text-gray-300 font-lato font-light"></a>About</li>
+          <li><a href="/services" className="text-white hover:text-gray-300 font-lato font-light"></a>Contact</li>
+          <li><a href="/contact" className="text-white hover:text-gray-300 font-lato font-light"></a>Help</li>
         </ul>
       </div>
     </nav>
