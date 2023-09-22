@@ -1,10 +1,11 @@
 import React from "react";
-import LowerDiv from "./components/LowerDiv";
+import Navbar from "./components/navbar";
+import Hero from "./components/Hero";
 const App = () => {
   return (
-    <div>
-      App
-      <LowerDiv></LowerDiv>
+    <div className="bg-custom-1 h-screen w-screen ">
+      <Navbar></Navbar>
+      <Hero></Hero>
     </div>
   );
 };
