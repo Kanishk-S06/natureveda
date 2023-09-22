@@ -1,8 +1,8 @@
 import React from "react";
 
-const Navbar = ({ Contactus }) => {
+const Navbar = () => {
   return (
-    <nav className="bg-transparent p-8">
+    <nav className="bg-transparent p-6">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="text-2xl font-nunito font-semibold text-black">
           Dr. NatureVeda
@@ -10,10 +10,7 @@ const Navbar = ({ Contactus }) => {
 
         <ul className="flex space-x-4">
           <li>
-            <a
-              href="/"
-              className="text-black hover:text-gray-300 font-lato"
-            >
+            <a href="/" className="text-black hover:text-gray-300 font-lato">
               Home
             </a>
           </li>
@@ -26,9 +23,9 @@ const Navbar = ({ Contactus }) => {
             </a>
           </li>
           <li>
-            <button onClick={Contactus}>
+            <button>
               <a
-                href="/services"
+                href="#contact"
                 className="text-black hover:text-gray-300 font-lato"
               >
                 Contact us
