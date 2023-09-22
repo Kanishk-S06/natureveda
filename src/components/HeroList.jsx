@@ -30,7 +30,7 @@ const HeroList = () => {
         <PatientForm onSubmit={handlePatientSubmit} />
         <button
           onClick={handleSubmit}
-          className="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-600"
+          className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-900 text-white px-4 py-2 mt-4 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 hover:shadow-lg"
         >
           Submit
         </button>
