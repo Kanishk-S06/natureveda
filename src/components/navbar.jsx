@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({toggleHer}) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [name, setName] = useState("");
   const storedName = localStorage.getItem("storedName");
@@ -45,7 +45,7 @@ const Navbar = () => {
           </li>
           {storedName ? (
             <li>
-              <button className="text-black hover:text-gray-300 font-lato" onClick={openPopup}>
+              <button className="text-black hover:text-gray-300 font-lato" onClick={toggleHer}>
                 {storedName}
               </button>
             </li>
